@@ -1,3 +1,3 @@
 # bit-javascript
-**prueba de javascript**
+**Prueba de Javascript**
 *alvaro bahos*
