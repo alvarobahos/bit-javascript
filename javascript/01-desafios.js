@@ -66,7 +66,7 @@ function saludar(nombre = "desconocido") {
 saludar("alvaro");
 saludar();
 
-/* crear 5 funciones, (sumar, restar, multiplicar, dividir, modulo),
+/* crear 6 funciones, (sumar, restar, multiplicar, dividir, modulo),
 debe recibir 2 numeros e imprimir el resultado asi: 
 EJ entrada: 8, 4
 Ej salida: 8 + 4 = 12*/
@@ -103,3 +103,118 @@ function potenciacion(number1, numeber2) {
 }
 
 potenciacion(10, 5);
+
+/* primera parte:
+crear 6 funciones, (sumar, restar, multiplicar, 
+dividir, modulo), cada funcion debe recibir 2 numeros 
+y retornar un resultado segun corresponda
+segunda parte:
+crear una funcion que reciba el nombre
+de la operacion y 2 numeros, debe imprimir el 
+resultado*/
+
+//primera parte
+
+function suma(number1, numeber2) {
+  return `${number1} + ${numeber2} = ${number1 + numeber2}`;
+}
+let resultadosuma = suma(8, 4);
+console.log(resultadosuma);
+
+function sustraer(number1, numeber2) {
+  return `${number1} - ${numeber2} = ${number1 - numeber2}`;
+}
+let resultadoresta = sustraer(8, 4);
+console.log(resultadoresta);
+
+function producto(number1, numeber2) {
+  return `${number1} x ${numeber2} = ${number1 * numeber2}`;
+}
+let resultadoproducto = producto(8, 4);
+console.log(resultadoproducto);
+
+function divition(number1, numeber2) {
+  return `${number1} / ${numeber2} = ${number1 / numeber2}`;
+}
+let resultadodivition = divition(8, 4);
+console.log(resultadodivition);
+
+function exponencial(number1, numeber2) {
+  return `${number1} ^ ${numeber2} = ${number1 ** numeber2}`;
+}
+let resultadoexponencial = exponencial(8, 4);
+console.log(resultadoexponencial);
+
+//segunda parte
+
+//function operaciones(operar, number1, number2) {
+// if (operar === "sumar");
+//{
+// console.log(`${number1} + ${number2} = ${resultadosuma(number1, number)}`);
+// }
+//}
+
+//operaciones("sumar", 8, 4);
+
+// ejemplo PEMDAS
+
+/* crear una funcion que reciba 4 numeros,
+mostrar el resultado de: a/b*(c+d)*/
+
+function pmdas(a, b, c, d) {
+  console.log((a / b) * (c + d));
+}
+pmdas(68, 2, 3, 9);
+
+//control de flujo, condicional
+
+function saludar(nombre) {
+  if (nombre) {
+    console.log(``);
+  }
+}
+
+/* crear una funcion que reciba dos numeros,
+imprimir el mayor*/
+
+function mayorque(a, b) {
+  if (a > b) {
+    console.log(a);
+  }
+}
+
+mayorque(4, 2);
+
+/* crear una funcion que reciba
+un numero, imprimir si negativo
+o si es positivo*/
+
+function posinega(a) {
+  if (a >= 0) console.log(`positivo`);
+  else console.log(`negativo`);
+}
+posinega(-5);
+posinega(5);
+
+/* crear una funcion que reciba 2 numero, 
+imprimir si el primer numero
+ es divisible por el segundo numero*/
+
+function divisible(a, b) {
+  if (a % b === 0) console.log(`divisble`);
+  else console.log(`no divisible`);
+}
+
+divisible(12, 3);
+
+/* crear una funcion que reciba 1 numero,
+imprimir si es negativo
+o si es positivo o si es cero*/
+
+function posinegacero(a) {
+  if (a > 0) console.log(`positivo`);
+  if (a < 0) console.log(`negativo`);
+  if (a === 0) console.log(0);
+}
+
+posinegacero(-4);
